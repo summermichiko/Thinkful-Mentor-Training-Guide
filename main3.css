@@ -116,7 +116,7 @@ body {
 }
 
 .content-section h3 {
-	text-align: center;
+	text-align: left;
 	font-family: Source Sans Pro;
 	color: #e74c39;
 	font-size: 45px;
@@ -125,7 +125,7 @@ body {
 }
 
 .content-section h4 {
-	text-align: center;
+	text-align: left;
 	font-family: Source Sans Pro;
 	font-size: 30px;
 	margin-bottom: 30px;
