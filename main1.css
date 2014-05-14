@@ -85,28 +85,25 @@ body {
 	margin-bottom: 30px;
 }
 
-li {
+.chapter-menu li {
 	padding: 17px;
 	margin-right: 10px;
-}
-
-#li-one {
-	background-color: #E74C39;
-	color: #FFFFFF;
 }
 
 .chapter-menu h2 {
 	font-weight: bold;
 	font-size: 17px;
 	padding-bottom: 7px;
+	color: #373A36;
 }
 
 .chapter-menu h3 {
 	font-size: 15px;
+	color: #373A36;
 }
 
-.content-section {
-	width: 635px;
+.changing-container {
+	width: 655px;
 	position: relative;
 	display: inline-block;
 	float: right;
@@ -115,7 +112,7 @@ li {
 	margin-top: 80px;
 }
 
-.content-section h3 {
+.changing-container h3 {
 	text-align: left;
 	font-family: Source Sans Pro;
 	color: #e74c39;
@@ -124,11 +121,20 @@ li {
 	margin-top: 25px;
 }
 
-.content-section h4 {
+.changing-container h4 {
 	text-align: left;
 	font-family: Source Sans Pro;
 	font-size: 30px;
 	margin-bottom: 30px;
+	color: #373A36;
+}
+
+.sub-header {
+	font-family: Source Sans Pro;
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 15px;
+	margin-top: 15px;
 }
 
 .main-content {
@@ -145,8 +151,95 @@ li {
 	line-height: 170%;
 	font-family: Source Sans Pro;
 	font-size: 17px;
+	color: #373A36;
 }
 
+#chart-img {
+	display: block;
+	position: relative;
+	margin-right: auto;
+	margin-right: auto;
+	width: 650px;
+	margin-bottom: 30px;
+}
+
+.comprehension-questions-section {
+	margin-bottom: 30px;
+	margin-top: 30px;
+	border-radius: 5px;
+	padding-bottom: 15px;
+}
+
+.comprehension-questions-header {
+	font-family: Source Sans Pro;
+	color: #373A36;
+	font-size: 23px;
+	padding-top: 15px;
+	padding-left: 15px;
+}
+
+.comprehension-questions {
+	background-color: #0099FF;
+	color: #373A36;
+	padding: 15px;
+	font-family: Source Sans Pro;
+	margin: 15px;
+	border-radius: 5px;
+	font-size: 17px;
+	padding-bottom: 15px;
+	font-weight: 600;
+}
+
+.answer-options {
+	font-family: Source Sans Pro;
+	font-size: 17px;
+	margin-top: 15px;
+	line-height: 150%;
+	margin-left: 30px;
+}
+
+.button {
+	margin-left: auto;
+	margin-right: auto;
+	width: 120px;
+}
+
+.submit-button {
+	font-family: Source Sans Pro;
+	font-size: 17px;
+	width: 120px;
+	background-color: #F1F1F1;
+	color: #373A36;
+	border-radius: 5px;
+	border: none;
+	height: 40px;
+	display: none;
+}
+
+.salmon-highlight {
+	background-color: #E74C39;
+	color: #FFFFFF;
+}
+
+.white-highlight {
+	background-color: #FFFFFF;
+}
+
+.chapter2, .chapter3, .chapter4, .chapter5, .chapter6 {
+	display:none;
+}
+
+.indented-section {
+	margin-left: 75px;
+}
+
+.correctAnswer {
+	background-color: #79ad37;
+}
+
+.wrongAnswer {
+	background-color: #b94a48;
+}
 
 
 
