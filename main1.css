@@ -208,12 +208,13 @@ body {
 	font-family: Source Sans Pro;
 	font-size: 17px;
 	width: 120px;
-	background-color: #F1F1F1;
+	background-color: #0099FF;
 	color: #373A36;
 	border-radius: 5px;
 	border: none;
 	height: 40px;
 	display: none;
+	
 }
 
 .salmon-highlight {
