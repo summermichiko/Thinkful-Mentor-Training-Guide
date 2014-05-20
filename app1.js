@@ -28,6 +28,8 @@ $(document).ready(function() {
 		if ($("#one_Three").is(':checked') && $("#two_Two").is(':checked')) {
 	   		$(this).closest(".comprehension-questions-section").find(".button .submit-button").show();   
 	    };
+	    //make specific for each class loaded on the page
+	    //make button hide if both ids are not checked
 
     	if ($("#three_One").is(':checked') && $("#four_Three").is(':checked')) {
 	   		$(this).closest(".comprehension-questions-section").find(".button .submit-button").show();   
