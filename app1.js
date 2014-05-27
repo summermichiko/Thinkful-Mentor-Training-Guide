@@ -7,6 +7,7 @@ $(document).ready(function() {
 		$("." + chapter).show();
 		$('html, body').scrollTop(0);
 	});
+
 	if (!$(".menu-li").hasClass("salmon-highlight")) {
 		$(".menu-li").mouseover(function() {
 			$(this).addClass("white-highlight");
@@ -57,20 +58,50 @@ $(document).ready(function() {
     	} else {
 	    	$(this).closest(".comprehension-questions-section").find("#button-five #submit-button-five").hide();
 	    };
+
+	    if ($("#eleven_Three").is(':checked') && $("#twelve_One").is(':checked')) {
+	   		$(this).closest(".comprehension-questions-section").find("#button-six #submit-button-six").show();   
+    	} else {
+	    	$(this).closest(".comprehension-questions-section").find("#button-six #submit-button-six").hide();
+	    };
 	});
 
-	$("submit-button-one").on("click", function() {
-		$(this).closest(".chapter1").hide(".chapter2").show();
+	$(".chapter1").on("click", "#submit-button-one", function() {
+		console.log("test");
+		//hide chapter1 and show chapter2
+		$('html, body').scrollTop(0);
 	});
 
+	$(".chapter2").on("click", "#submit-button-two", function() {
+		console.log("test");
+		//hide chapter2 and show chapter3
+		$('html, body').scrollTop(0);
+	});
 
+	$(".chapter3").on("click", "#submit-button-three", function() {
+		console.log("test");
+		//hide chapter3 and show chapter4
+		$('html, body').scrollTop(0);
+	});
 
+	$(".chapter4").on("click", "#submit-button-four", function() {
+		console.log("test");
+		//hide chapter4 and show chapter5
+		$('html, body').scrollTop(0);
+	});
 
+	$(".chapter5").on("click", "#submit-button-five", function() {
+		console.log("test");
+		//hide chapter5 and show chapter6
+		$('html, body').scrollTop(0);
+	});
 
-
-
+	$(".chapter6").on("click", "#submit-button-six", function() {
+		console.log("test");
+		//hide chapter6 and show next steps div
+		$('html, body').scrollTop(0);
+	});
     	//and make now current menu-li clickable and remove opacity
-    
 
 });
 
