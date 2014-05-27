@@ -25,46 +25,51 @@ $(document).ready(function() {
 			//ask - can i look at all valid answers, and is there one that is not checked
 			//for the particular class, find all valid answers, if returns none, i know its correct
 
+			//make specific for each class loaded on the page
+	    	//make button hide if both ids are not checked
+
 		if ($("#one_Three").is(':checked') && $("#two_Two").is(':checked')) {
-	   		$(this).closest(".comprehension-questions-section").find(".button .submit-button").show();   
+	   		$(this).closest(".comprehension-questions-section").find("#button-one #submit-button-one").show();   
+	    } else {
+	    	$(this).closest(".comprehension-questions-section").find("#button-one #submit-button-one").hide();
 	    };
-	    //make specific for each class loaded on the page
-	    //make button hide if both ids are not checked
 
     	if ($("#three_One").is(':checked') && $("#four_Three").is(':checked')) {
-	   		$(this).closest(".comprehension-questions-section").find(".button .submit-button").show();   
-    	};
+	   		$(this).closest(".comprehension-questions-section").find("#button-two #submit-button-two").show();   
+    	} else {
+	    	$(this).closest(".comprehension-questions-section").find("#button-two #submit-button-two").hide();
+	    };
+
     	if ($("#five_Two").is(':checked') && $("#six_One").is(':checked')) {
-	   		$(this).closest(".comprehension-questions-section").find(".button .submit-button").show();   
-    	};
+	   		$(this).closest(".comprehension-questions-section").find("#button-three #submit-button-three").show();   
+    	} else {
+	    	$(this).closest(".comprehension-questions-section").find("#button-three #submit-button-three").hide();
+	    };
+
     	if ($("#seven_Two").is(':checked') && $("#eight_One").is(':checked')) {
-	   		$(this).closest(".comprehension-questions-section").find(".button .submit-button").show();   
-    	};
+	   		$(this).closest(".comprehension-questions-section").find("#button-four #submit-button-four").show();   
+    	} else {
+	    	$(this).closest(".comprehension-questions-section").find("#button-four #submit-button-four").hide();
+	    };
+
     	if ($("#nine_Two").is(':checked') && $("#ten_One").is(':checked')) {
-	   		$(this).closest(".comprehension-questions-section").find(".button .submit-button").show();   
-    	};
-    	if ($("#eleven_Three").is(':checked') && $("#twelve_One").is(':checked')) {
-	   		$(this).closest(".comprehension-questions-section").find(".button .submit-button").show();   
-    	};
+	   		$(this).closest(".comprehension-questions-section").find("#button-five #submit-button-five").show();   
+    	} else {
+	    	$(this).closest(".comprehension-questions-section").find("#button-five #submit-button-five").hide();
+	    };
 	});
 
-	//store ids in array
-	//store info in html
+	$("submit-button-one").on("click", function() {
+		$(this).closest(".chapter1").hide(".chapter2").show();
+	});
 
-	/*var currentChapter = 1;
-	if (currentChapter < 6) {
-	    $(".submit-button").click(function() {
-	    	currentChapter++;
-	    	$(".changing-container").html(currentChapter);
-	}) else {
-		$(".congratsSection").show();
-	};*/
+
+
+
+
+
 
     	//and make now current menu-li clickable and remove opacity
-
-    $("#lastButton").click(function(){
-    	//when last button is clicked, show Congrats div
-    });
     
 
 });

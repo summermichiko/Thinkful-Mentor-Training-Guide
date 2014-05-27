@@ -198,13 +198,13 @@ body {
 	margin-left: 30px;
 }
 
-.button {
+#button-one, #button-two, #button-three, #button-four, #button-five {
 	margin-left: auto;
 	margin-right: auto;
 	width: 120px;
 }
 
-.submit-button {
+#submit-button-one, #submit-button-two, #submit-button-three, #submit-button-four, #submit-button-five {
 	font-family: Source Sans Pro;
 	font-size: 17px;
 	width: 120px;
@@ -214,7 +214,24 @@ body {
 	border: none;
 	height: 40px;
 	display: none;
-	
+}
+
+#button-six {
+	margin-right: auto;
+	margin-left: auto;
+	width: 140px;
+}
+
+#submit-button-six {
+	font-family: Source Sans Pro;
+	font-size: 17px;
+	width: 140px;
+	background-color: #0099FF;
+	color: #373A36;
+	border-radius: 5px;
+	border: none;
+	height: 60px;
+	display: none;
 }
 
 .salmon-highlight {
