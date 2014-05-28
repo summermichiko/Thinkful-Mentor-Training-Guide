@@ -251,12 +251,12 @@ body {
 
 .final a:link {
 	color: #373A36;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 .final a:visited { 
 	color: #373A36;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 

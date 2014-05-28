@@ -73,8 +73,9 @@ $(document).ready(function() {
 		$('html, body').scrollTop(0);
 	});
 
-	$("#submit-button-six button").on("click", function() {
-		$(".chapter6").hide();
+	$(".final-chapter button").on("click", function() {
+		console.log("test");
+		$(".chapter").hide();
 		$(".final").show();
 		$('html, body').scrollTop(0);
 	});
