@@ -241,6 +241,24 @@ body {
 	background-color: #b94a48;
 }
 
+.final {
+	display: none;
+}
+
+.final h4 {
+	line-height: 1.25;
+}
+
+.final a:link {
+	color: #373A36;
+	text-decoration: none;
+}
+
+.final a:visited { 
+	color: #373A36;
+	text-decoration: none;
+}
+
 
 
 

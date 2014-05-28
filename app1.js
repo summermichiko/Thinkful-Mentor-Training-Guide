@@ -24,14 +24,6 @@ $(document).ready(function() {
 		var $el = $(this).closest(".comprehension-questions");
 		var correct = $(this).data("valid")!=undefined;
 		$el.toggleClass("correctAnswer", correct).toggleClass("wrongAnswer", !correct);
-
-		//make more generic (stored in html which ones are valid)
-			//ask - can i look at all valid answers, and is there one that is not checked
-			//for the particular class, find all valid answers, if returns none, i know its correct
-
-			//make specific for each class loaded on the page
-	    	//make button hide if both ids are not checked
-
 		if ($("#one_Three").is(':checked') && $("#two_Two").is(':checked')) {
 	   		$(this).closest(".comprehension-questions-section").find("#button-one #submit-button-one").show();   
 	    } else {
@@ -78,8 +70,12 @@ $(document).ready(function() {
 		$("." + nextChapter).show();
 		$('html, body').scrollTop(0);
 	});
-    	//and make now current menu-li clickable and remove opacity
 
+	$("#submit-button-six button").on("click", function() {
+		$(".chapter6").hide();
+		$(".final").show();
+		$('html, body').scrollTop(0);
+	});
 });
 
 
