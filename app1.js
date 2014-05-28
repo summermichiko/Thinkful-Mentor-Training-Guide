@@ -62,6 +62,7 @@ $(document).ready(function() {
 	});
 
 	//add current class to current chapter - add css salmon highlight to current
+	//color not picking up on css .salmon-highlight
 
 	$(".next-chapter button").on("click", function(e) {
 		console.log(e);
