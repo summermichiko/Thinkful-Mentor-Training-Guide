@@ -208,8 +208,8 @@ body {
 	font-family: Source Sans Pro;
 	font-size: 17px;
 	width: 120px;
-	background-color: #0099FF;
-	color: #373A36;
+	background-color: #E74C39;
+	color: #FFFFFF;
 	border-radius: 5px;
 	border: none;
 	height: 40px;
@@ -234,11 +234,11 @@ body {
 }
 
 .correctAnswer {
-	background-color: #79ad37;
+	background-color: #E74c39;
 }
 
 .wrongAnswer {
-	background-color: #b94a48;
+	background-color: #0099ff;
 }
 
 .final {
