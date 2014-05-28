@@ -1,5 +1,8 @@
 $(document).ready(function() {
 	$(".menu-li").click(function() {
+		if ($(this).hasClass('active')==false) {
+			return;
+		}
 		$(".menu-li").removeClass("salmon-highlight");
 		$(this).addClass("salmon-highlight");
 		var chapter = $(this).data("chapter");
@@ -66,39 +69,13 @@ $(document).ready(function() {
 	    };
 	});
 
-	$(".chapter1").on("click", "#submit-button-one", function() {
-		console.log("test");
-		//hide chapter1 and show chapter2
-		$('html, body').scrollTop(0);
-	});
-
-	$(".chapter2").on("click", "#submit-button-two", function() {
-		console.log("test");
-		//hide chapter2 and show chapter3
-		$('html, body').scrollTop(0);
-	});
-
-	$(".chapter3").on("click", "#submit-button-three", function() {
-		console.log("test");
-		//hide chapter3 and show chapter4
-		$('html, body').scrollTop(0);
-	});
-
-	$(".chapter4").on("click", "#submit-button-four", function() {
-		console.log("test");
-		//hide chapter4 and show chapter5
-		$('html, body').scrollTop(0);
-	});
-
-	$(".chapter5").on("click", "#submit-button-five", function() {
-		console.log("test");
-		//hide chapter5 and show chapter6
-		$('html, body').scrollTop(0);
-	});
-
-	$(".chapter6").on("click", "#submit-button-six", function() {
-		console.log("test");
-		//hide chapter6 and show next steps div
+	$(".next-chapter button").on("click", function(e) {
+		console.log(e);
+		var el = $(this);
+		var nextChapter = el.data("next");
+		$("[data-chapter='"+nextChapter+"']").addClass("active");
+		$(".chapter").hide();
+		$("." + nextChapter).show();
 		$('html, body').scrollTop(0);
 	});
     	//and make now current menu-li clickable and remove opacity
