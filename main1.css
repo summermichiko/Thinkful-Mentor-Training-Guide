@@ -7,8 +7,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -19,7 +19,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -58,7 +58,7 @@ body {
 	width: 150px;
 	display: block;
 	position: relative;
-	margin-left: 20px;
+	margin-left: 0;
 	padding-top: 12px;
 }
 
@@ -69,43 +69,36 @@ body {
 }
 
 .side-menu {
-	width: 240px;
+	width: 250px;
 	position: fixed;
 	display: inline-block;
 	float: left;
-	padding-left: 10px;
 	margin-right: 15px;
 	background-color: #F1F1F1;
-	border-radius: 5px;
+	border-radius: 3px;
 	font-family: Source Sans Pro;
-	padding-top: 10px;
-	padding-bottom: 5px;
 	color: #373a36;
 	margin-top: 90px;
 	margin-bottom: 30px;
 }
 
-.chapter-menu li {
+.menu-li {
 	padding: 17px;
-	margin-right: 10px;
-	cursor: pointer;
-	cursor: hand;
 }
 
 .chapter-menu h2 {
 	font-weight: bold;
 	font-size: 17px;
 	padding-bottom: 7px;
-	color: #373A36;
 }
 
 .chapter-menu h3 {
 	font-size: 15px;
-	color: #373A36;
+	line-height: 22px;
 }
 
 .changing-container {
-	width: 655px;
+	width: 675px;
 	position: relative;
 	display: inline-block;
 	float: right;
@@ -168,7 +161,7 @@ body {
 .comprehension-questions-section {
 	margin-bottom: 30px;
 	margin-top: 30px;
-	border-radius: 5px;
+	border-radius: 3px;
 	padding-bottom: 15px;
 }
 
@@ -177,16 +170,17 @@ body {
 	color: #373A36;
 	font-size: 23px;
 	padding-top: 15px;
-	padding-left: 15px;
+	padding-left: 0;
 }
 
 .comprehension-questions {
 	background-color: #e74c39;
 	color: #373A36;
-	padding: 15px;
+	padding: 25px;
 	font-family: Source Sans Pro;
 	margin: 15px;
-	border-radius: 5px;
+	margin-left: 0;
+	border-radius: 3px;
 	font-size: 17px;
 	padding-bottom: 15px;
 	font-weight: 600;
@@ -196,8 +190,9 @@ body {
 	font-family: Source Sans Pro;
 	font-size: 17px;
 	margin-top: 15px;
+	margin-bottom: 5px;
 	line-height: 150%;
-	margin-left: 30px;
+	margin-left: 0;
 }
 
 #button-one, #button-two, #button-three, #button-four, #button-five, #button-six {
@@ -209,28 +204,37 @@ body {
 #submit-button-one, #submit-button-two, #submit-button-three, #submit-button-four, #submit-button-five, #submit-button-six {
 	font-family: Source Sans Pro;
 	font-size: 17px;
-	width: 120px;
+	width: 130px;
 	background-color: #0099FF;
 	color: #FFFFFF;
-	border-radius: 5px;
+	border-radius: 3px;
 	border: none;
 	height: 40px;
 	display: none;
 	cursor: pointer;
-	cursor: hand;
+}
+
+.completed-section {
+	color: #373A36;
+	cursor: pointer;
 }
 
 .salmon-highlight {
 	background-color: #E74C39;
 	color: #FFFFFF;
+	cursor: pointer;
 }
 
-.white-highlight {
-	background-color: #FFFFFF;
+.white-text {
+	color: #fff;
+}
+
+.disabled-text {
+	color: #bfbfbf;
 }
 
 .chapter2, .chapter3, .chapter4, .chapter5, .chapter6 {
-	display:none;
+	display: none;
 }
 
 .indented-section {
@@ -238,7 +242,7 @@ body {
 }
 
 .correctAnswer {
-	background-color: #0099FF;
+	background-color: #5DB5F0;
 }
 
 .wrongAnswer {
@@ -257,12 +261,19 @@ body {
 	color: #373A36;
 	text-decoration: underline;
 	cursor: pointer;
-	cursor: hand;
 }
 
-.final a:visited { 
+.final a:visited {
 	color: #373A36;
 	text-decoration: underline;
+}
+
+.radioInput {
+	margin-right: 5px !important;
+}
+
+label {
+	display: block;
 }
 
 

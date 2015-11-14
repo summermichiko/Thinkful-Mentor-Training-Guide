@@ -6,37 +6,43 @@
 	<link rel="stylesheet" type="text/css" href="main1.css">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,300italic,300,700,700italic' rel='stylesheet' type='text/css'>
+
+	<!-- favicon -->
+
+
 </head>
 <body>
 	<div class="main-header">
-		<a href="index.html"><img class="header-img" src="Images/thinkful-white-logo.png"></a>
+		<div class="container">
+			<a href="index.html"><img class="header-img" src="Images/thinkful-white-logo.png"></a>
+		</div>
 	</div>
 	<div class="container">
 		<div class="side-menu">
 			<ul class="chapter-menu">
-				<li class="menu-li active" id="li-one" data-chapter="chapter1">
+				<li class="menu-li active" id="li-one" data-chapter="chapter1" style="border-radius: 2px 2px 0 0;">
 					<h2>Chapter 1:</h2>
 					<h3>Our Learning Philosophy</h3>
 				</li>
 				<li class="menu-li" id="li-two" data-chapter="chapter2">
-					<h2>Chapter 2:</h2>
-					<h3>Anatomy of a First Mentor Session</h3>
+					<h2 class="disabled-text">Chapter 2:</h2>
+					<h3 class="disabled-text">Anatomy of a First Mentor Session</h3>
 				</li>
 				<li class="menu-li" id="li-three" data-chapter="chapter3">
-					<h2>Chapter 3:</h2>
-					<h3>8 Tips on How to Have a Badass First Mentor Session</h3>
+					<h2 class="disabled-text">Chapter 3:</h2>
+					<h3 class="disabled-text">8 Tips on How to Have a Badass First Mentor Session</h3>
 				</li>
 				<li class="menu-li" id="li-four" data-chapter="chapter4">
-					<h2>Chapter 4:</h2>
-					<h3>Mentorship Behind the Scenes</h3>
+					<h2 class="disabled-text">Chapter 4:</h2>
+					<h3 class="disabled-text">Mentorship Behind the Scenes</h3>
 				</li>
 				<li class="menu-li" id="li-five" data-chapter="chapter5">
-					<h2>Chapter 5:</h2>
-					<h3>The Socratic Method and 6 Other Awesome Coaching Strategies</h3>
+					<h2 class="disabled-text">Chapter 5:</h2>
+					<h3 class="disabled-text">The Socratic Method and 6 Other Awesome Coaching Strategies</h3>
 				</li>
-				<li class="menu-li" id="li-six" data-chapter="chapter6">
-					<h2>Chapter 6:</h2>
-					<h3>Emergency Mentor Moments</h3>
+				<li class="menu-li" id="li-six" data-chapter="chapter6" style="border-radius: 0 0 2px 2px;">
+					<h2 class="disabled-text">Chapter 6:</h2>
+					<h3 class="disabled-text">Emergency Mentor Moments</h3>
 				</li>
 			</ul>
 		</div>
@@ -44,8 +50,7 @@
 			<div class="chapter1 chapter">
 				<h3>Chapter 1:</h3>
 				<h4>Our Learning Philosophy</h4>
-				<p class="main-content">Here at Thinkful, we are laser-focused on student success. Other 
-				Companies focus on producing content; we’re fans of them, and even use their content, but we’re in a diﬀerent business. We don’t want to produce learning materials, we want to produce learning. We’re not satisfied with people buying our courses, we expect to provide the optimal conditions for them to actually learn. Below is our oﬀicial Learning Philosophy, the guiding principles that drive all of educational decisions. 
+				<p class="main-content">Here at Thinkful, we are laser-focused on student success. Other companies focus on producing content; we’re fans of them, and even use their content, but we’re in a different business. We don’t want to produce learning materials, we want to produce learning. We’re not satisfied with people buying our courses, we expect to provide the optimal conditions for them to actually learn. Below is our official Learning Philosophy, the guiding principles that drive all of educational decisions.
 				</p>
 				<p class="lower-point">
 					1) Real learning is fundamentally human.
@@ -62,23 +67,39 @@
 					<h5 class="comprehension-questions" id="quesOne">
 						Thinkful's learning philosophy includes all of the following except:
 						<form class="answer-options">
-							<input type="radio" name="option" value="1" id="one_One"> Real learning is fundamentally human.<br>
-							<input type="radio" name="option" value="2" id="one_Two"> Real learning requires a significant personal commitment and subsequently a supportive community.<br>
-							<input type="radio" name="option" value="3" id="one_Three" data-valid> Real learning requires regular formative assessments.<br>
-							<input type="radio" name="option" value="4" id="one_Four"> Real learning happens when education is relevant to students' interests and is project-based.<br>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="1" id="one_One"> Real learning is fundamentally human.
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="2" id="one_Two"> Real learning requires a significant personal commitment and subsequently a supportive community.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="3" id="one_Three" data-valid> Real learning requires regular formative assessments.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="4" id="one_Four"> Real learning happens when education is relevant to students' interests and is project-based.<br>
+							</label>
 						</form>
 					</h5>
 					<h5 class="comprehension-questions" id="quesTwo">
 						Thinkful is focused on:
 						<form class="answer-options">
-							<input type="radio" name="option" value="1" id="two_One"> High Test Scores.<br>
-							<input type="radio" name="option" value="2" id="two_Two" data-valid> Student Success.<br>
-							<input type="radio" name="option" value="3" id="two_Three"> Beautiful Videos.<br>
-							<input type="radio" name="option" value="4" id="two_Four"> Teacher to Student Ratios.<br>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="1" id="two_One"> High Test Scores.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="2" id="two_Two" data-valid> Student Success.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="3" id="two_Three"> Beautiful Videos.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="4" id="two_Four"> Teacher to Student Ratios.<br>
+							</label>
 						</form>
 					</h5>
 					<div id="button-one" class="next-chapter">
-						<button id="submit-button-one" type="button" data-next="chapter2">Next Chapter</button>
+						<button id="submit-button-one" type="button" data-this="chapter1" data-next="chapter2">Next Chapter</button>
 					</div>
 				</div>
 			</div>
@@ -93,23 +114,39 @@
 					<h5 class="comprehension-questions" id="quesThree">
 						How should you start a mentor session?
 						<form class="answer-options">
-							<input type="radio" name="option" value="1" id="three_One" data-valid> State Your Purpose and Agenda.<br>
-							<input type="radio" name="option" value="2" id="three_Two"> Ask How Your Student is Doing.<br>
-							<input type="radio" name="option" value="3" id="three_Three"> Share a Cool Resource.<br>
-							<input type="radio" name="option" value="4" id="three_Four"> Set Next Week's Goal.<br>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="1" id="three_One" data-valid> State Your Purpose and Agenda.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="2" id="three_Two"> Ask How Your Student is Doing.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="3" id="three_Three"> Share a Cool Resource.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="4" id="three_Four"> Set Next Week's Goal.<br>
+							</label>
 						</form>
 					</h5>
 					<h5 class="comprehension-questions" id="quesFour">
 						Most of your session should be spent doing what?
 						<form class="answer-options">
-							<input type="radio" name="option" value="1" id="four_One"> Explaining New Concepts.<br>
-							<input type="radio" name="option" value="2" id="four_Two"> Critiquing Student Work.<br>
-							<input type="radio" name="option" value="3" id="four_Three" data-valid> Asking Questions (Socratic Seminar).<br>
-							<input type="radio" name="option" value="4" id="four_Four"> Small Talk to Build Rapport.<br>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="1" id="four_One"> Explaining New Concepts.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="2" id="four_Two"> Critiquing Student Work.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="3" id="four_Three" data-valid> Asking Questions (Socratic Seminar).<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="4" id="four_Four"> Small Talk to Build Rapport.<br>
+							</label>
 						</form>
 					</h5>
 					<div id="button-two" class="next-chapter">
-						<button id="submit-button-two" type="button" data-next="chapter3">Next Chapter</button>
+						<button id="submit-button-two" type="button" data-this="chapter2" data-next="chapter3">Next Chapter</button>
 					</div>
 				</div>
 			</div>
@@ -129,14 +166,14 @@
 					2. Follow the 66.667% Rule.
 				</p>
 				<p class="main-content">
-					About 2/3rds, 20 minutes of the 30 minute session, or 66.667% of the session should consist of the student speaking. This keeps 
-					the students engaged, and gives you the opportunity to show you care about her goals. This foundation of care is essential to build the rapport necessary for true learning (and much better strategy than “small talk”). To keep meaningful conversation going, have core questions and clarifying questions prepared. 
+					About 2/3rds, 20 minutes of the 30 minute session, or 66.667% of the session should consist of the student speaking. This keeps
+					the students engaged, and gives you the opportunity to show you care about her goals. This foundation of care is essential to build the rapport necessary for true learning (and much better strategy than “small talk”). To keep meaningful conversation going, have core questions and clarifying questions prepared.
 				</p>
 				<p class="sub-header">
 					3. Be a Mickey Goldmill.
 				</p>
 				<p class="main-content">
-					There’s nothing wrong with being nice, but sometimes “being nice” is simply a form of selfish hopelessness. You may know EXACTLY what a student needs to do to reach their potential. Maybe its a stern conversation about devoting more time or about following through with feedback. But that conversation is 4 tricky -- it’s hard. Its easier to give up hope and just be polite. This isn’t good mentorship. 
+					There’s nothing wrong with being nice, but sometimes “being nice” is simply a form of selfish hopelessness. You may know EXACTLY what a student needs to do to reach their potential. Maybe its a stern conversation about devoting more time or about following through with feedback. But that conversation is 4 tricky -- it’s hard. Its easier to give up hope and just be polite. This isn’t good mentorship.
 				</p>
 				<p class="main-content">
 					Learning is a struggle, don’t take the easy way out. Be a Mickey Goldmill -- bold and direct, full of hope, and relentlessly coaching until a student reaches their full potential.
@@ -145,7 +182,7 @@
 					4. Understand their secret dreams.
 				</p>
 				<p class="main-content">
-					Our students aren’t learning to program for the hell of it -- they’re learning because it enables a dream. They want to work for 
+					Our students aren’t learning to program for the hell of it -- they’re learning because it enables a dream. They want to work for
 					themselves, have more time to travel, work at an ambitious startup, or simply make more money. Whatever the dream is, you want to know it. Use your Jedi question-asking skills to draw this information out, and be excited about her dream. Supporting your student will have a huge, positive impact on her learning if the student follows up with committed skill building
 				</p>
 				<p class="sub-header">
@@ -158,7 +195,7 @@
 					6. Set high, but necessary expectations.
 				</p>
 				<p class="main-content">
-					No matter how motivated she is, how much she pays, or what courses she’s signed up for, your student will not be able to achieve her goals unless she creates the conditions for rigorous learning. 
+					No matter how motivated she is, how much she pays, or what courses she’s signed up for, your student will not be able to achieve her goals unless she creates the conditions for rigorous learning.
 				</p>
 				<p class="main-content">
 					Here are a few tips to emphasize:
@@ -186,16 +223,16 @@
 					Set routines and procedures from day 1.
 				</p>
 				<p class="main-content">
-					It would be GREAT if we had all the time in the world to create mind-blowingly fun mentor session plans for each of our students. The reality is that most of us have little to no time to prepare for each session. Instead, we rely on our accumulated experience to get us through. 
+					It would be GREAT if we had all the time in the world to create mind-blowingly fun mentor session plans for each of our students. The reality is that most of us have little to no time to prepare for each session. Instead, we rely on our accumulated experience to get us through.
 				</p>
 				<p class="main-content">
-					Routine remedies this! By having an established procedure for running the mentor session, your student engages with a high quality session every single time without you thinking much about it. Make sure to firmly set routines into motion from the first session. 
+					Routine remedies this! By having an established procedure for running the mentor session, your student engages with a high quality session every single time without you thinking much about it. Make sure to firmly set routines into motion from the first session.
 				</p>
 				<p class="sub-header">
 					8. Be short and sweet when talking about yourself. If possible, show, don't tell.
 				</p>
 				<p class="main-content">
-					You only need two sentences to introduce your background. You’d be surprised how quickly students will pick it up from there with questions. If available, share your Linkedin profile, GitHub account, or online portfolio.			
+					You only need two sentences to introduce your background. You’d be surprised how quickly students will pick it up from there with questions. If available, share your Linkedin profile, GitHub account, or online portfolio.
 				</p>
 				<div class="comprehension-questions-section" id="compQuesCh3">
 					<div class="comprehension-questions-header">
@@ -204,23 +241,39 @@
 					<h5 class="comprehension-questions" id="quesFive">
 						Why is it important to set routines early?
 						<form class="answer-options">
-							<input type="radio" name="option" value="1" id="five_One"> To be as boring as possible.<br>
-							<input type="radio" name="option" value="2" id="five_Two" data-valid> It allows you to provide a high quality mentor session regularly.<br>
-							<input type="radio" name="option" value="3" id="five_Three"> To demonstrate organization.<br>
-							<input type="radio" name="option" value="4" id="five_Four"> To demonstrate boring-ness.<br>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="1" id="five_One"> To be as boring as possible.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="2" id="five_Two" data-valid> It allows you to provide a high quality mentor session regularly.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="3" id="five_Three"> To demonstrate organization.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="4" id="five_Four"> To demonstrate boring-ness.<br>
+							</label>
 						</form>
 					</h5>
 					<h5 class="comprehension-questions" id="quesSix">
 						How much approximate time during the session should students be speaking?
 						<form class="answer-options">
-							<input type="radio" name="option" value="1" id="six_One" data-valid> Two Thirds of the Time.<br>
-							<input type="radio" name="option" value="2" id="six_Two"> A Fourth of the Time.<br>
-							<input type="radio" name="option" value="3" id="six_Three"> The Whole Time.<br>
-							<input type="radio" name="option" value="4" id="six_Four"> Depends.<br>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="1" id="six_One" data-valid> Two Thirds of the Time.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="2" id="six_Two"> A Fourth of the Time.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="3" id="six_Three"> The Whole Time.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="4" id="six_Four"> Depends.<br>
+							</label>
 						</form>
 					</h5>
 					<div id="button-three" class="next-chapter">
-						<button id="submit-button-three" type="button" data-next="chapter4">Next Chapter</button>
+						<button id="submit-button-three" type="button" data-this="chapter3" data-next="chapter4">Next Chapter</button>
 					</div>
 				</div>
 			</div>
@@ -245,17 +298,17 @@
 				</p>
 				<p class="sub-header">3. Send Follow Up E-mail</p>
 				<p class="main-content">
-					After each session, write a follow up e-mail summarizing what was covered in the session, the student’s weekly focus, and their Spring Goal. 
+					After each session, write a follow up e-mail summarizing what was covered in the session, the student’s weekly focus, and their Spring Goal.
 				</p>
 				<p class="sub-header">4. Engage in Google+ Community With Other Students</p>
 				<p class="main-content">Set aside time each week to explore our student Google+ communities and engage with students about their work and the questions they have.</p>
-				<p class="sub-header">5. Send Session & RECAP Form Reminder</p>
+				<p class="sub-header">5. Send Session and RECAP Form Reminder</p>
 				<p class="main-content">
-					In GMAIL, automate an e-mail to be sent one day before each mentor session reminding students of their upcoming mentor session and to submit their RECAP Form. 
+					In GMAIL, automate an e-mail to be sent one day before each mentor session reminding students of their upcoming mentor session and to submit their RECAP Form.
 				</p>
 				<p class="sub-header">6. Mentor Session Prep</p>
 				<p class="main-content">
-					Take 10 minutes before the mentor session to review your 
+					Take 10 minutes before the mentor session to review your
 					student’s RECAP Form and any work they’ve done in the past week.
 				</p>
 				<div class="comprehension-questions-section" id="compQuesCh4">
@@ -265,23 +318,39 @@
 					<h5 class="comprehension-questions" id="quesSeven">
 						How many e-mails should you send to students during the week?
 						<form class="answer-options">
-							<input type="radio" name="option" value="1" id="seven_One"> 1<br>
-							<input type="radio" name="option" value="2" id="seven_Two" data-valid> 2<br>
-							<input type="radio" name="option" value="3" id="seven_Three"> 3<br>
-							<input type="radio" name="option" value="4" id="seven_Four"> 4<br>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="1" id="seven_One"> 1<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="2" id="seven_Two" data-valid> 2<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="3" id="seven_Three"> 3<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="4" id="seven_Four"> 4<br>
+							</label>
 						</form>
 					</h5>
 					<h5 class="comprehension-questions" id="quesEight">
 						What do we call a weekly goal set together with students?
 						<form class="answer-options">
-							<input type="radio" name="option" value="1" id="eight_One" data-valid> Sprint Goal.<br>
-							<input type="radio" name="option" value="2" id="eight_Two"> Weekly Goal.<br>
-							<input type="radio" name="option" value="3" id="eight_Three"> RECAP Goal.<br>
-							<input type="radio" name="option" value="4" id="eight_Four"> Fun Goal.<br>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="1" id="eight_One" data-valid> Sprint Goal.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="2" id="eight_Two"> Weekly Goal.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="3" id="eight_Three"> RECAP Goal.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="4" id="eight_Four"> Fun Goal.<br>
+							</label>
 						</form>
 					</h5>
 					<div id="button-four" class="next-chapter">
-						<button id="submit-button-four" type="button" data-next="chapter5">Next Chapter</button>
+						<button id="submit-button-four" type="button" data-this="chapter4" data-next="chapter5">Next Chapter</button>
 					</div>
 				</div>
 			</div>
@@ -295,7 +364,7 @@
 					It's easy to think that excessive direct praise like, “wow, you did an amazing job” or “you are so good at this” will increase student outcomes. The opposite is true.
 				</p>
 				<p class="main-content">
-					These type of value judgements transform a coaching session into a time of evaluation and over time students become insensitive to the praise. Instead, provide indirect positive feedback by objectively stating how hard a problem was and acknowledge the students suﬀicient tackling of the problem. The student will deduce the praise themselves! Save direct positive feedback for those really, really special times. 
+					These type of value judgements transform a coaching session into a time of evaluation and over time students become insensitive to the praise. Instead, provide indirect positive feedback by objectively stating how hard a problem was and acknowledge the students suﬀicient tackling of the problem. The student will deduce the praise themselves! Save direct positive feedback for those really, really special times.
 				</p>
 				<p class="sub-header">
 					2. Indirect Negative Feedback.
@@ -313,7 +382,7 @@
 					4. Code Tour.
 				</p>
 				<p class="main-content">
-					Many students can make something that works without 
+					Many students can make something that works without
 					understanding why it works. Asking them to “walk through” the code, explaining what each line does, lets them recognize the “why” behind each action.
 				</p>
 				<p class="sub-header">
@@ -326,13 +395,13 @@
 					6. Awesome Analogies.
 				</p>
 				<p class="main-content">
-					Research proves that deep learning occurs when new knowledge is linked with prior knowledge. Analogies are a great way to do this. Use cars and their components to explain classes and fields, the animal kingdom to explain inheritance, shapes to explain polymorphism -- have fun with it! 
+					Research proves that deep learning occurs when new knowledge is linked with prior knowledge. Analogies are a great way to do this. Use cars and their components to explain classes and fields, the animal kingdom to explain inheritance, shapes to explain polymorphism -- have fun with it!
 				</p>
 				<p class="sub-header">
 					7. Socratic Method.
 				</p>
 				<p class="main-content">
-					The Socratic Method is a combination of all of the strategies above. The oﬀicial definition is, “A pedagogical technique in which a teacher does not give information directly but instead asks a series of questions, with the result that the student comes either to the desired knowledge by answering the questions or to a deeper awareness of the limits of knowledge.” A mentor accomplishes this by integrating all of the techniques above to achieve a clear learning goal. 
+					The Socratic Method is a combination of all of the strategies above. The oﬀicial definition is, “A pedagogical technique in which a teacher does not give information directly but instead asks a series of questions, with the result that the student comes either to the desired knowledge by answering the questions or to a deeper awareness of the limits of knowledge.” A mentor accomplishes this by integrating all of the techniques above to achieve a clear learning goal.
 				</p>
 				<div class="comprehension-questions-section" id="compQuesCh5">
 					<div class="comprehension-questions-header">
@@ -341,23 +410,39 @@
 					<h5 class="comprehension-questions" id="quesNine">
 						What is an example of Indirect Praise?
 						<form class="answer-options">
-							<input type="radio" name="option" value="1" id="nine_One"> "You did alright."<br>
-							<input type="radio" name="option" value="2" id="nine_Two" data-valid> "This project is complex and very difficult to accomplish andyou accomplished it incredibly well."<br>
-							<input type="radio" name="option" value="3" id="nine_Three"> "You are diogn really, really well."<br>
-							<input type="radio" name="option" value="4" id="nine_Four"> "You did ell, but there's a lot you could improve."<br>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="1" id="nine_One"> "You did alright."<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="2" id="nine_Two" data-valid> "This project is complex and very difficult to accomplish andyou accomplished it incredibly well."<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="3" id="nine_Three"> "You are diogn really, really well."<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="4" id="nine_Four"> "You did ell, but there's a lot you could improve."<br>
+							</label>
 						</form>
 					</h5>
 					<h5 class="comprehension-questions" id="quesTen">
 						The Socratic Method utilizes what method?
 						<form class="answer-options">
-							<input type="radio" name="option" value="1" id="ten_One" data-valid> Questions.<br>
-							<input type="radio" name="option" value="2" id="ten_Two"> Lectures.<br>
-							<input type="radio" name="option" value="3" id="ten_Three"> Visual Examples.<br>
-							<input type="radio" name="option" value="4" id="ten_Four"> Speed.<br>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="1" id="ten_One" data-valid> Questions.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="2" id="ten_Two"> Lectures.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="3" id="ten_Three"> Visual Examples.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="4" id="ten_Four"> Speed.<br>
+							</label>
 						</form>
 					</h5>
 					<div id="button-five" class="next-chapter">
-						<button id="submit-button-five" type="button" data-next="chapter6">Next Chapter</button>
+						<button id="submit-button-five" type="button" data-this="chapter5" data-next="chapter6">Next Chapter</button>
 					</div>
 				</div>
 			</div>
@@ -368,10 +453,10 @@
 					My student wants to skip this session.
 				</p>
 				<p class="main-content">
-					Before anything else, use all of your power to make the meeting happen. As the course work gets tougher, and life gets busier, engagement with mentors become more essential for students. You can ask them to commit to meeting for only 10 minutes even if they have no material prepared or lure them by sharing information that requires no preparation (like introducing developer tools). Whatever you do, make that meeting happen. 
+					Before anything else, use all of your power to make the meeting happen. As the course work gets tougher, and life gets busier, engagement with mentors become more essential for students. You can ask them to commit to meeting for only 10 minutes even if they have no material prepared or lure them by sharing information that requires no preparation (like introducing developer tools). Whatever you do, make that meeting happen.
 				</p>
 				<p class="main-content">
-					When you do have the meeting, simply follow your routine. 
+					When you do have the meeting, simply follow your routine.
 				</p>
 				<p class="main-content">
 					More broadly, begin to engrain in your student that your sole existence is to help them get out of tough situations. Don’t let them run away from hard parts of the curriculum — the benefits of learning to program is totally worth it. If they claim that the issue is external and that they are too busy, remind them of your belief in them. This may be the time to break the rules and provide strong, DIRECT feedback.
@@ -380,13 +465,13 @@
 					My student didn't do any work this week. At all.
 				</p>
 				<p class="main-content">
-					Use scaﬀolding and the Socratic Method to work with student on their current spot in the course. There will be times where you may have to teach a concept explicitly. 
+					Use scaﬀolding and the Socratic Method to work with student on their current spot in the course. There will be times where you may have to teach a concept explicitly.
 				</p>
 				<p class="sub-header">
 					I haven't seen my student for 2 weeks.
 				</p>
 				<p class="main-content">
-					If you just can’t connect with a student and they miss two consecutive meetings with you, let us know as soon as possible. We’ll follow up with them to see if there’s anything we can do to better oﬀer support them and remind them of their commitment and goals. 
+					If you just can’t connect with a student and they miss two consecutive meetings with you, let us know as soon as possible. We’ll follow up with them to see if there’s anything we can do to better oﬀer support them and remind them of their commitment and goals.
 				</p>
 				<p class="sub-header">
 					What should I do if a student wants to go way off the curriculum?
@@ -395,10 +480,10 @@
 					Hmmm. It depends.
 				</p>
 				<p class="main-content">
-					From our experience, the course material is foundational for building other skills oﬀ. The concepts that students o"en want to cover outside of the curriculum usually require a strong grasp of curriculum content to excel at. Students don’t want to replace curriculum content, they want to supplement it. 
+					From our experience, the course material is foundational for building other skills oﬀ. The concepts that students o"en want to cover outside of the curriculum usually require a strong grasp of curriculum content to excel at. Students don’t want to replace curriculum content, they want to supplement it.
 				</p>
 				<p class="main-content">
-					If students persist, assess where the students are at. If they have a strong enough grasp of the fundamental concepts to engage the side project, feel free to do it. If they haven’t gained the necessary foundational skills to accomplish their project ideas — walk them through exactly why veering away from the curriculum is a bad idea. 
+					If students persist, assess where the students are at. If they have a strong enough grasp of the fundamental concepts to engage the side project, feel free to do it. If they haven’t gained the necessary foundational skills to accomplish their project ideas — walk them through exactly why veering away from the curriculum is a bad idea.
 				</p>
 				<div class="comprehension-questions-section" id="compQuesCh6">
 					<div class="comprehension-questions-header">
@@ -407,29 +492,45 @@
 					<h5 class="comprehension-questions" id="quesEleven">
 						What should you do if a student wants to skip a session?
 						<form class="answer-options">
-							<input type="radio" name="option" value="1" id="eleven_One"> Tell them, "It's okay" and wait until next week's session.<br>
-							<input type="radio" name="option" value="2" id="eleven_Two"> Scold them for being irresponsible.<br>
-							<input type="radio" name="option" value="3" id="eleven_Three" data-valid> Try your best to persuade them to join the session.<br>
-							<input type="radio" name="option" value="4" id="eleven_Four"> Forward the e-mail to the Mentor Manager.<br>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="1" id="eleven_One"> Tell them, "It's okay" and wait until next week's session.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="2" id="eleven_Two"> Scold them for being irresponsible.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="3" id="eleven_Three" data-valid> Try your best to persuade them to join the session.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="4" id="eleven_Four"> Forward the e-mail to the Mentor Manager.<br>
+							</label>
 						</form>
 					</h5>
 					<h5 class="comprehension-questions" id="quesTwelve">
 						What if a student wants to learn something off curriculum?
 						<form class="answer-options">
-							<input type="radio" name="option" value="1" id="twelve_One" data-valid> It depends on the student's learning level and what concept they want to explore.<br>
-							<input type="radio" name="option" value="2" id="twelve_Two"> No ways!<br>
-							<input type="radio" name="option" value="3" id="twelve_Three"> Absolutely!<br>
-							<input type="radio" name="option" value="4" id="twelve_Four"> It depends on how excited you are about the topic.<br>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="1" id="twelve_One" data-valid> It depends on the student's learning level and what concept they want to explore.<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="2" id="twelve_Two"> No ways!<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="3" id="twelve_Three"> Absolutely!<br>
+							</label>
+							<label>
+								<input class="radioInput" type="radio" name="option" value="4" id="twelve_Four"> It depends on how excited you are about the topic.<br>
+							</label>
 						</form>
 					</h5>
 					<div id="button-six" class="final-chapter">
-						<button id="submit-button-six" type="button">Next Steps>></button>
+						<button id="submit-button-six" type="button">Final Steps</button>
 					</div>
 				</div>
 			</div>
 			<div class="final">
 				<h3>Congratulations!</h3>
-				<h4>Looks like you're ready to start mentoring.  Contact our Mentor Manager <a href="mailto:grae@thinkful.com?" target="_blank">Grae</a> to schedule one final briefing.</h4>
+				<h4>Looks like you're ready to start mentoring.  Contact our Mentor Manager, <a href="mailto:grae@thinkful.com?" target="_blank">Grae,</a> to schedule a final briefing.</h4>
 			</div>
 		</div>
 	</div>
