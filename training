@@ -14,7 +14,7 @@
 <body>
 	<div class="main-header">
 		<div class="container">
-			<a href="intro"><img class="header-img" src="Images/thinkful-white-logo.png"></a>
+			<a href="index.html"><img class="header-img" src="Images/thinkful-white-logo.png"></a>
 		</div>
 	</div>
 	<div class="container">
