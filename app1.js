@@ -1,39 +1,69 @@
 $(document).ready(function() {
 
-	// click on side menu item
-	// $(".menu-li").click(function() {
-	// 	var chapter = $(this).data("chapter");
-	// 	if ($(this).hasClass('active') == false) {
-	// 		return;
-	// 	}
-	// 	$(this).find('h2').removeClass('disabled-text');
-	// 	$(this).find('h3').removeClass('disabled-text');
-	// 	$(".menu-li").removeClass("salmon-highlight");
-	// 	$(this).addClass("salmon-highlight");
-	// 	$(this).find('h2').addClass('white-text');
-	// 	$(this).find('h3').addClass('white-text');
-	// 	$(".chapter").hide();
-	// 	$("." + chapter).show();
-	// 	$('body').animate({ scrollTop: 0 });
-	// });
+	// click on responsive navbar
+	$(".dropDownButton").on("click", function() {
+		$(".responsiveChapterUl").toggle();
+	});
+
+	// click on chapter within responsive navbar
+	$(".responsiveChapterUl li").on("click", function() {
+		if ($(this).hasClass("active")) {
+			$(".responsiveChapterUl").hide();
+			var updateText = $(this).find("h2").text();
+			$(".dropDownButton").text(updateText);
+		};
+	});
+
+	// fixed scroll for desktop and mobile
+	var sideMenu = $(".desktop-side-menu"),
+		fixedSideMenu = sideMenu.offset().top - 30,
+		responsiveMenu = $(".dropDownButton"),
+		fixedResponsiveMenu = responsiveMenu.offset().top;
+
+	var fixedMenu = function() {
+		var scrollTop = $(window).scrollTop();
+		if ($(window).width() > 767) {
+			if (scrollTop > fixedSideMenu) {
+				sideMenu.addClass('fixed-desktop');
+			} else {
+				sideMenu.removeClass('fixed-desktop');
+			}
+		} else {
+			if (scrollTop > fixedResponsiveMenu) {
+				responsiveMenu.addClass('fixed-mobile');
+			} else {
+				responsiveMenu.removeClass('fixed-mobile');
+			}
+		}
+	};
+	$(window).scroll(function() {
+		fixedMenu();
+	});
 
 	$(".menu-li").click(function() {
+		// disabled chapter if questions have not been answered correctly
 		if ($(this).hasClass('active')==false) {
 			return;
 		}
+
+		// if current chapter of completed chapters
 		$(".menu-li").removeClass("salmon-highlight");
+		$(".menu-li.active").each(function(index, nav) {
+			$(this).find("h2").removeClass("white-text");
+			$(this).find("h2").addClass("complete-text");
+			$(this).find("h3").removeClass("white-text");
+			$(this).find("h3").addClass("complete-text");
+		});
+
 		$(this).addClass("salmon-highlight");
+		$(this).find("h2").addClass("white-text");
+		$(this).find("h3").addClass("white-text");
 		var chapter = $(this).data("chapter");
 		$(".chapter").hide();
+		$(".final").hide();
 		$("." + chapter).show();
 		$('html, body').scrollTop(0);
 	});
-
-	// if (!$(".menu-li").hasClass("salmon-highlight")) {
-	// 	$(".menu-li").mouseleave(function() {
-	// 		$(this).removeClass("white-highlight");
-	// 	})
-	// };
 
 	// toggle next button if correct answers are selected
 	$(".comprehension-questions input[type='radio']").change(function() {
@@ -85,47 +115,50 @@ $(document).ready(function() {
 	});
 
 	// initial styling of chapter one on load
-	$('#li-one').addClass('salmon-highlight');
-	$('#li-one').find('h2').addClass('white-text');
-	$('#li-one').find('h3').addClass('white-text');
+	$('.desktopMenu #li-one').addClass('salmon-highlight');
+	$('.desktopMenu #li-one').find('h2').addClass('white-text');
+	$('.desktopMenu #li-one').find('h3').addClass('white-text');
+	$('.responsiveNavbar #li-one').addClass('salmon-highlight');
+	$('.responsiveNavbar #li-one').find('h2').addClass('white-text');
+	$('.responsiveNavbar #li-one').find('h3').addClass('white-text');
 
-	// click on next button
-	// $(".next-chapter button").on("click", function(e) {
-	// 	var el = $(this),
-	// 		thisChapter = el.data("this"),
-	// 		nextChapter = el.data("next");
-	// 	$("[data-chapter=" + thisChapter + "]").removeClass("salmon-highlight");
-	// 	$("[data-chapter=" + thisChapter + "]").find('h2').removeClass("white-text");
-	// 	$("[data-chapter=" + thisChapter + "]").find('h3').removeClass("white-text");
-	// 	$("[data-chapter=" + thisChapter + "]").find('h2').addClass("completed-section");
-	// 	$("[data-chapter=" + thisChapter + "]").find('h3').addClass("completed-section");
-	// 	$("[data-chapter=" + nextChapter + "]").addClass("salmon-highlight");
-	// 	$("[data-chapter=" + nextChapter + "]").find('h2').removeClass("disabled-text");
-	// 	$("[data-chapter=" + nextChapter + "]").find('h3').removeClass("disabled-text");
-	// 	$("[data-chapter=" + nextChapter + "]").find('h2').addClass("white-text");
-	// 	$("[data-chapter=" + nextChapter + "]").find('h3').addClass("white-text");
-	// 	$(".chapter").hide();
-	// 	$("." + nextChapter).show();
-	// 	$('body').animate({ scrollTop: 0 });
-	// });
-
+	// click on next chapter button
 	$(".next-chapter button").on("click", function(e) {
-		console.log(e);
-		var el = $(this);
-		var nextChapter = el.data("next");
-		$("[data-chapter='"+nextChapter+"']").addClass("active");
+		var thisChapter = $(this).data("this"),
+			nextChapter = $(this).data("next");
+
+		// for this chapter
+		$("[data-chapter='" + thisChapter + "']").removeClass("salmon-highlight");
+		$("[data-chapter='" + thisChapter + "']").find('h2').removeClass("white-text");
+		$("[data-chapter='" + thisChapter + "']").find('h3').removeClass("white-text");
+		$("[data-chapter='" + thisChapter + "']").find('h2').addClass("complete-text");
+		$("[data-chapter='" + thisChapter + "']").find('h3').addClass("complete-text");
+
+		// for next chapter
+		$("[data-chapter='" + nextChapter + "']").addClass("active salmon-highlight");
+		$("[data-chapter='" + nextChapter + "']").find('h2').removeClass("disabled-text");
+		$("[data-chapter='" + nextChapter + "']").find('h3').removeClass("disabled-text");
+		$("[data-chapter='" + nextChapter + "']").find('h2').addClass("white-text");
+		$("[data-chapter='" + nextChapter + "']").find('h3').addClass("white-text");
+
+		// general
 		$(".chapter").hide();
 		$("." + nextChapter).show();
-		$('html, body').scrollTop(0);
+		$('body').animate({ scrollTop: 0 });
+
+		// update navbar button text for responsive view
+		var nextChapterText = $(".responsiveChapterUl").find("[data-chapter='" + nextChapter + "']").find("h2").text();
+		$(".dropDownButton").text(nextChapterText);
 	});
 
+	// click on final steps button
 	$(".final-chapter button").on("click", function() {
 		$(".chapter").hide();
-		$(".final").show();
+
+		// calculate the user's screen height
+		var userHeight = $(window).height() - 30;
+		$(".final").css("height", userHeight).show();
 		$('body').animate({ scrollTop: 0 });
 	});
 });
-
-
-
 
