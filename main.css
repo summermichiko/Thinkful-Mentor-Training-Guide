@@ -7,8 +7,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -19,7 +19,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -84,7 +84,6 @@ body {
 	font-family: Source Sans Pro;
 	font-size: 20px;
 	color: #fff;
-	width: 670px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 30px;
@@ -120,7 +119,44 @@ body {
 	margin-top: 30px;
 	display: block;
 	margin-bottom: 50px;
-}	
+}
+
+@media (max-width: 767px) {
+	.container {
+		width: 100%;
+		margin-right: auto;
+		margin-left: auto;
+		display: block;
+	}
+	.white-logo {
+		width: 120px;
+		margin-top: 50px;
+		position: relative;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.mentor-training {
+		font-family: Merriweather;
+		font-size: 60px;
+		text-align: center;
+		color: #fff;
+		font-weight: 700;
+	}
+	.welcome-para {
+		font-family: Source Sans Pro;
+		font-size: 14px;
+		margin-top: 30px;
+		font-weight: 300;
+		line-height: 22px;
+		text-align: justify;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.get-started-button {
+		margin-top: 25px;
+	}
+}
 
 
 
