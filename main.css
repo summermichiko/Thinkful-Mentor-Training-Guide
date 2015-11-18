@@ -121,6 +121,10 @@ body {
 	margin-bottom: 50px;
 }
 
+.get-started-button:focus {
+	outline: none;
+}
+
 @media (max-width: 767px) {
 	.container {
 		width: 100%;
