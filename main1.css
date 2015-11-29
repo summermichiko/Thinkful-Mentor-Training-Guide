@@ -126,6 +126,10 @@ h2, h3 {
 	padding: 17px;
 }
 
+.chapter-menu {
+	margin-bottom: 0;
+}
+
 .chapter-menu h2 {
 	font-weight: bold;
 	font-size: 17px;
@@ -162,7 +166,7 @@ h2, h3 {
 .sub-header {
 	font-family: Source Sans Pro;
 	font-size: 22px;
-	font-weight: 600;
+	font-weight: 400;
 	margin-bottom: 15px;
 	margin-top: 15px;
 }
@@ -202,7 +206,7 @@ h2, h3 {
 }
 
 .comprehension-questions-section {
-	margin-bottom: 10px;
+	margin-bottom: 0;
 	margin-top: 30px;
 	border-radius: 3px;
 	padding-bottom: 30px;
@@ -241,21 +245,18 @@ h2, h3 {
 }
 
 #button-one, #button-two, #button-three, #button-four, #button-five, #button-six {
-	margin-left: auto;
-	margin-right: auto;
-	width: 120px;
+	text-align: right;
 	margin-bottom: 20px;
 }
 
 #submit-button-one, #submit-button-two, #submit-button-three, #submit-button-four, #submit-button-five, #submit-button-six {
 	font-family: Source Sans Pro;
 	font-size: 17px;
-	width: 130px;
+	padding: 10px 20px;
 	background-color: #0099FF;
 	color: #FFFFFF;
-	border-radius: 3px;
+	border-radius: 2px;
 	border: none;
-	height: 40px;
 	display: none;
 	cursor: pointer;
 }
@@ -292,7 +293,7 @@ h2, h3 {
 }
 
 .wrongAnswer {
-	background-color: #e74c39;
+	background-color: #E74C39;
 }
 
 .final {

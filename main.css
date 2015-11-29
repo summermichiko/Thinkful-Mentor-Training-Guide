@@ -93,17 +93,16 @@ body {
 }
 
 .get-started-button {
-	padding: .55em 1em;
-	border-radius: 5px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	-ms-border-radius: 3px;
-	-o-border-radius: 3px;
+	padding: 10px 15px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
 	vertical-align: middle;
 	background-color: #f1f1f1;
 	border: #e74c39;
 	text-transform: uppercase;
-	margin: 0 5px;
 	cursor: pointer;
 	-webkit-transition: background-color .5s;
 	-moz-transition: background-color .5s;
@@ -118,7 +117,7 @@ body {
 	margin-right: auto;
 	margin-top: 30px;
 	display: block;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
 .get-started-button:focus {
