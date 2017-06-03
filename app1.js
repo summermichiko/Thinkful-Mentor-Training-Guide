@@ -11,7 +11,7 @@ $(document).ready(function() {
 			$(".responsiveChapterUl").hide();
 			var updateText = $(this).find("h2").text();
 			$(".dropDownButton").text(updateText);
-		};
+		}
 	});
 
 	// fixed scroll for desktop and mobile
@@ -42,7 +42,7 @@ $(document).ready(function() {
 
 	$(".menu-li").click(function() {
 		// disabled chapter if questions have not been answered correctly
-		if ($(this).hasClass('active')==false) {
+		if ($(this).hasClass('active') === false) {
 			return;
 		}
 
@@ -68,7 +68,7 @@ $(document).ready(function() {
 	// toggle next button if correct answers are selected
 	$(".comprehension-questions input[type='radio']").change(function() {
 		var $el = $(this).closest(".comprehension-questions"),
-			correct = $(this).data("valid") != undefined;
+			correct = $(this).data("valid") !== undefined;
 		$el.toggleClass("correctAnswer", correct).toggleClass("wrongAnswer", !correct);
 
 		// check chapter 1
@@ -76,42 +76,42 @@ $(document).ready(function() {
 	   		$(this).closest(".comprehension-questions-section").find("#button-one #submit-button-one").show();
 	    } else {
 	    	$(this).closest(".comprehension-questions-section").find("#button-one #submit-button-one").hide();
-	    };
+	    }
 
 	    // check chapter 2
     	if ($("#three_One").is(':checked') && $("#four_Three").is(':checked')) {
 	   		$(this).closest(".comprehension-questions-section").find("#button-two #submit-button-two").show();
     	} else {
 	    	$(this).closest(".comprehension-questions-section").find("#button-two #submit-button-two").hide();
-	    };
+	    }
 
 	    // check chapter 3
     	if ($("#five_Two").is(':checked') && $("#six_One").is(':checked')) {
 	   		$(this).closest(".comprehension-questions-section").find("#button-three #submit-button-three").show();
     	} else {
 	    	$(this).closest(".comprehension-questions-section").find("#button-three #submit-button-three").hide();
-	    };
+	    }
 
 	    // check chapter 4
     	if ($("#seven_Two").is(':checked') && $("#eight_One").is(':checked')) {
 	   		$(this).closest(".comprehension-questions-section").find("#button-four #submit-button-four").show();
     	} else {
 	    	$(this).closest(".comprehension-questions-section").find("#button-four #submit-button-four").hide();
-	    };
+	    }
 
 	    // check chapter 5
     	if ($("#nine_Two").is(':checked') && $("#ten_One").is(':checked')) {
 	   		$(this).closest(".comprehension-questions-section").find("#button-five #submit-button-five").show();
     	} else {
 	    	$(this).closest(".comprehension-questions-section").find("#button-five #submit-button-five").hide();
-	    };
+	    }
 
 	    // check chapter 6
 	    if ($("#eleven_Three").is(':checked') && $("#twelve_One").is(':checked')) {
 	   		$(this).closest(".comprehension-questions-section").find("#button-six #submit-button-six").show();
     	} else {
 	    	$(this).closest(".comprehension-questions-section").find("#button-six #submit-button-six").hide();
-	    };
+	    }
 	});
 
 	// initial styling of chapter one on load
@@ -161,4 +161,3 @@ $(document).ready(function() {
 		$('body').animate({ scrollTop: 0 });
 	});
 });
-
